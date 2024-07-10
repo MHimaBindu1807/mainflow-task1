@@ -1,0 +1,111 @@
+LISTOPERATIONS:
+
+l=[0,10,15,18,19,12]
+print(l)
+print(l[0])
+print(l[5])
+print(l[-4])
+print(len(l))
+
+#adding one more element into the list
+l.append(6)
+print(l)
+
+#removing an element from the list
+l.remove(0)
+print(l)
+
+#inserting more than one element
+l.insert(3,4)
+print(l)
+
+#using extend operation
+l.extend([22,32])
+print(l)
+
+#to remove last element of the list
+l.pop()
+print(l)
+
+OUTPUT:
+
+[0, 10, 15, 18, 19, 12]
+0
+12
+15
+6
+[0, 10, 15, 18, 19, 12, 6]
+[10, 15, 18, 19, 12, 6]
+[10, 15, 18, 4, 19, 12, 6]
+[10, 15, 18, 4, 19, 12, 6, 22, 32]
+[10, 15, 18, 4, 19, 12, 6, 22]
+
+
+DICTIONARY OPERATIONS:
+
+d={'Name':'Bindu','Age':'19','Gender':'Female'}
+print(d)
+
+#accessing elements from dictionary
+print(d['Name'])
+
+#using get() method
+print(d.get('Age'))
+
+print(d.keys())
+print(d.values())
+
+print(len(d))
+
+#adding new element to the dictionary
+d.__setitem__('Study','B.Tech')
+print(d)
+
+#removing items from the dictionary
+d.clear()
+print(d)
+
+OUTPUT:
+
+{'Name': 'Bindu', 'Age': '19', 'Gender': 'Female'}
+Bindu
+19
+dict_keys(['Name', 'Age', 'Gender'])
+dict_values(['Bindu', '19', 'Female'])
+3
+{'Name': 'Bindu', 'Age': '19', 'Gender': 'Female', 'Study': 'B.Tech'}
+{}
+
+SET OPERATIONS:
+
+s={"Bindu",19,54,"B.Tech",True}
+print(s)
+
+#adding new element
+s.add("Sitams")
+print(s)
+
+#creating one more set
+b={"Cse","Csm","Cai"}
+print(b)
+
+#merging two sets and saving in other variable
+new_set=s.union(b)
+print(new_set)
+
+#adding a new element
+new_set.add(6)
+print(new_set)
+
+#clearing all elements
+new_set.clear()
+print(new_set)
+
+OUTPUT:
+
+{True, 19, 54, 'Bindu', 'B.Tech'}
+{True, 19, 'Sitams', 54, 'Bindu', 'B.Tech'}
+{'Cse', 'Csm', 'Cai'}
+{True, 'Sitams', 'Cai', 'B.Tech', 19, 'Csm', 54, 'Bindu', 'Cse'}
+{True, 'Sitams', 6, 'Cai', 'B.Tech', 19, 'Csm', 54, 'Bindu', 'Cse'}
+set()
